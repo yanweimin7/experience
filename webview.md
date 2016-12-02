@@ -35,6 +35,7 @@
         try {
             CookieManager cookieManager = CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
+//domain前加个点才能覆盖已有的key，CookieTest来自CTS 源码
             cookieManager.setCookie(url, cookieStr + ";domain=." + url);
         } catch (Exception e) {
             Log.e("WacCookieManager", "setCookie failed", e);
