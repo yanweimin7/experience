@@ -8,3 +8,15 @@ class A extends B{
 }
 PowerMockito.mockStatic(A.class)
 B.test方法没有被mock，必须同时PowerMockito.mockStatic(B.class)
+
+
+
+## 单测
+
+- PowerMockito.doReturn
+
+```java
+PowerMockito.doReturn(appExtension).when(WaxProject.class);
+        WaxProject.getExtension(Mockito.eq(project));
+```
+
