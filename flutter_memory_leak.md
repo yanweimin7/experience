@@ -16,3 +16,13 @@
 
 在浏览器打开
 
+点击底部的 "allocation profile"
+
+记得点击GC后再查具体实例个数
+
+在底部ctrl+F 查找具体类型，点击进去。
+查找字符串 currently allocated	count
+点开 strongly reachable会显示每个实例，点击其中任何一个。进入该实例详情。
+进入后点击 Retaining path，就能查到引用路径了。
+
+
